@@ -2,6 +2,7 @@
 
 namespace OOPLAB2
 {
+    // Leo F SUT22
     class Program
     {
         static void Main(string[] args)
@@ -17,6 +18,7 @@ namespace OOPLAB2
             var snake = new Snake(3, "Golden", "Male", true, "Vizer", true);
             snake.SetFree();
             snake.PrintAnimal();
+            snake.Pet();
         }
     }
 }
