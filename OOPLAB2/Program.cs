@@ -11,6 +11,12 @@ namespace OOPLAB2
             var shiba = new Shiba(10, "Black", "Male", true, "Joe", false);
             shiba.MakeTrick();
             shiba.Wash();
+            shiba.MakeSound();
+            var husky = new Husky(15, "White", "Male", false, "Darin", false, true);
+            husky.CheckSleep();
+            var snake = new Snake(3, "Golden", "Male", true, "Vizer", true);
+            snake.SetFree();
+            snake.PrintAnimal();
         }
     }
 }
