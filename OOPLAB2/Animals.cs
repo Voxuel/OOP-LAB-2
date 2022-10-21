@@ -6,12 +6,11 @@ namespace OOPLAB2
 {
     class Animals
     {
-        private int Age;
-        private string Color;
-        private string Gender;
-        private bool IsHungry;
-        public string Name;
-
+        private readonly int Age;
+        private readonly string Color;
+        private readonly string Gender;
+        private readonly bool IsHungry;
+        public readonly string Name;
         public Animals(int _age,string _color, string _gender, bool _isHungry, string _name)
         {
             this.Age = _age;
@@ -38,6 +37,10 @@ namespace OOPLAB2
         public void PrintAnimal()
         {
             Console.WriteLine($"Name : {Name} \nAge : {Age} \nGender : {Gender} \nColor : {Color}");
+        }
+        public virtual void MakeSound()
+        {
+            
         }
     }
 }
