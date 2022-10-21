@@ -10,7 +10,7 @@ namespace OOPLAB2
         private string Color;
         private string Gender;
         private bool IsHungry;
-        private string Name;
+        public string Name;
 
         public Animals(int _age,string _color, string _gender, bool _isHungry, string _name)
         {
