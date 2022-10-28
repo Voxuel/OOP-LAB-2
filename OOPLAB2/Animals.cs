@@ -6,11 +6,11 @@ namespace OOPLAB2
 {
     class Animals
     {
-        private readonly int Age;
-        private readonly string Color;
-        private readonly string Gender;
-        private readonly bool IsHungry;
-        public readonly string Name;
+        private readonly int Age = 0;
+        private readonly string Color = "";
+        private readonly string Gender = "";
+        private readonly bool IsHungry = false;
+        public readonly string Name = "";
         private readonly string Sound = "";
         
         public Animals()

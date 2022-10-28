@@ -6,7 +6,7 @@ namespace OOPLAB2
 {
     class Snake : Animals
     {
-        private readonly bool IsPoisonous;
+        private readonly bool IsPoisonous = true;
         private readonly string Sound = "Hichhz";
         public Snake(int _age, string _color, string _gender, bool _isHungry, string _name, bool _isPoisonous)
         : base(_age, _color, _gender, _isHungry, _name)
