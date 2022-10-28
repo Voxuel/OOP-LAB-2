@@ -19,6 +19,11 @@ namespace OOPLAB2
             snake.SetFree();
             snake.PrintAnimal();
             snake.Pet();
+            IReptile snake1 = new Snake(13,"Orange","Male",true,"Jackie",true);
+            snake1.LayEgg();
+            IMammal cat1 = new Cat();
+            cat1.Move();
+           
         }
     }
 }

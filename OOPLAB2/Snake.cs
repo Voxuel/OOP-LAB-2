@@ -3,7 +3,7 @@
 
 namespace OOPLAB2
 {
-    class Snake : Animals
+    class Snake : Animals,IReptile
     {
         private readonly bool IsPoisonous = true;
         private readonly string Sound = "Hichhz";
@@ -15,6 +15,10 @@ namespace OOPLAB2
         public Snake() : base()
         {
 
+        }
+        void IReptile.LayEgg()
+        {
+            Console.WriteLine("The reptile lays an egg!");
         }
 
         public void SetFree()

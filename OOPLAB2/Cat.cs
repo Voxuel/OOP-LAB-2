@@ -3,7 +3,7 @@
 
 namespace OOPLAB2
 {
-    class Cat : Animals
+    class Cat : Animals,IMammal
     {
         private readonly bool ClawCutNeeded = false;
         private readonly string Sound = "Meow";
@@ -16,6 +16,10 @@ namespace OOPLAB2
         public Cat() : base()
         {
 
+        }
+        void IMammal.Move()
+        {
+            Console.WriteLine("The mammal moves");
         }
         public void CutClaws()
         {
