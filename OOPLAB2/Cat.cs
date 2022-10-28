@@ -7,6 +7,7 @@ namespace OOPLAB2
     class Cat : Animals
     {
         private readonly bool ClawCutNeeded;
+        private readonly string Sound = "Meow";
         public Cat(int _age, string _color, string _gender, bool _isHungry, string _name, bool _clawCutNeeded) 
             : base(_age, _color, _gender, _isHungry, _name)
         {
@@ -30,7 +31,7 @@ namespace OOPLAB2
         }
         public override void MakeSound()
         {
-             Console.WriteLine("Meow");
+             Console.WriteLine(Sound);
         }
     }
 }

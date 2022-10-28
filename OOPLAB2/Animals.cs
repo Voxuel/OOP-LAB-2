@@ -11,6 +11,7 @@ namespace OOPLAB2
         private readonly string Gender;
         private readonly bool IsHungry;
         public readonly string Name;
+        private readonly string Sound = "";
         
         public Animals()
         {
@@ -45,7 +46,7 @@ namespace OOPLAB2
         }
         public virtual void MakeSound()
         {
-            
+            Console.WriteLine(Sound);
         }
     }
 }
