@@ -12,6 +12,10 @@ namespace OOPLAB2
         {
             this.NeedsWash = _needsWash;
         }
+        public Dog() : base()
+        {
+
+        }
         public void Wash()
         {
             if (!NeedsWash)

@@ -6,11 +6,15 @@ namespace OOPLAB2
 {
     class Husky : Dog
     {
-        private bool IsSleeping;
+        private readonly bool IsSleeping;
         public Husky(int _age, string _color, string _gender, bool _isHungry, string _name, bool _needsWash, bool _isSleeping)
         : base(_age, _color, _gender, _isHungry, _name, _needsWash)
         {
             this.IsSleeping = _isSleeping;
+        }
+        public Husky() : base()
+        {
+
         }
         public void CheckSleep()
         {

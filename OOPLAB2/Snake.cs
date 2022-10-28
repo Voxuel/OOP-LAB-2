@@ -12,6 +12,11 @@ namespace OOPLAB2
         {
             this.IsPoisonous = _isPoisonous;
         }
+        public Snake() : base()
+        {
+
+        }
+
         public void SetFree()
         {
             if (!IsPoisonous)

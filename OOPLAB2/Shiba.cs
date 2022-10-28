@@ -12,6 +12,10 @@ namespace OOPLAB2
         {
 
         }
+        public Shiba() : base()
+        {
+
+        }
         public void MakeTrick()
         {
             Console.WriteLine($"{Name} " + Trick);

@@ -12,6 +12,11 @@ namespace OOPLAB2
         {
             this.ClawCutNeeded = _clawCutNeeded;
         }
+
+        public Cat() : base()
+        {
+
+        }
         public void CutClaws()
         {
             if (!ClawCutNeeded)
