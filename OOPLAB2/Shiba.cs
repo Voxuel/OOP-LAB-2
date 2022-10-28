@@ -6,7 +6,7 @@ namespace OOPLAB2
 {
     class Shiba : Dog
     {
-        private string Trick = "the shiba stands on 2 legs!";
+        private readonly string Trick = "the shiba stands on 2 legs!";
         public Shiba(int _age, string _color, string _gender, bool _isHungry, string _name, bool _needsWash)
         : base(_age, _color, _gender, _isHungry, _name, _needsWash)
         {
