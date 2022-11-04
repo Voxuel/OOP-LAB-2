@@ -3,6 +3,9 @@
 
 namespace OOPLAB2
 {
+    /// <summary>
+    /// Class to handle animal-atributes that are later derived.
+    /// </summary>
     class Animals
     {
         private readonly int Age = 0;
@@ -39,6 +42,9 @@ namespace OOPLAB2
                 Console.WriteLine($"You feed {Name}");
             }
         }
+        /// <summary>
+        /// Method to print the specified animal and all their atributes.
+        /// </summary>
         public void PrintAnimal()
         {
             Console.WriteLine($"Name : {Name} \nAge : {Age} \nGender : {Gender} \nColor : {Color}");

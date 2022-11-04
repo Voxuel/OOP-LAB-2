@@ -9,20 +9,31 @@ namespace OOPLAB2
         {
             var cat = new Cat(10,"Grey","Female",false,"Nath",false);
             cat.PrintAnimal();
+            IMammal Icat = new Cat();
+            Icat.Move();
+            cat.MakeSound();
+
+            Console.WriteLine("-----------NEW ANIMAL-------------");
+
             var shiba = new Shiba(10, "Black", "Male", true, "Joe", false);
             shiba.MakeTrick();
             shiba.Wash();
             shiba.MakeSound();
+
+            Console.WriteLine("-----------NEW ANIMAL-------------");
+
             var husky = new Husky(15, "White", "Male", false, "Darin", false, true);
+            husky.PrintAnimal();
             husky.CheckSleep();
+
+            Console.WriteLine("-----------NEW ANIMAL-------------");
+
             var snake = new Snake(3, "Golden", "Male", true, "Vizer", true);
             snake.SetFree();
             snake.PrintAnimal();
             snake.Pet();
-            IReptile snake1 = new Snake(13,"Orange","Male",true,"Jackie",true);
-            snake1.LayEgg();
-            IMammal cat1 = new Cat();
-            cat1.Move();
+            IReptile Isnake = new Snake(13,"Orange","Male",true,"Jackie",true);
+            Isnake.LayEgg();
            
         }
     }
