@@ -9,17 +9,12 @@ namespace OOPLAB2
     class Animals
     {
         private readonly int Age = 0;
-        private readonly string Color = "";
-        private readonly string Gender = "";
-        private readonly bool IsHungry = false;
-        public readonly string Name = "";
-        private readonly string Sound = "";
-        
-        public Animals()
-        {
-
-        }
-        public Animals(int _age,string _color, string _gender, bool _isHungry, string _name)
+        private readonly string Color;
+        private readonly string Gender;
+        private readonly bool IsHungry;
+        protected readonly string Name;       
+   
+        public Animals(int _age = 0,string _color = "null", string _gender = "null", bool _isHungry = false, string _name = "null" )
         {
             this.Age = _age;
             this.Color = _color;
@@ -51,7 +46,7 @@ namespace OOPLAB2
         }
         public virtual void MakeSound()
         {
-            Console.WriteLine(Sound);
+            Console.WriteLine("");
         }
     }
 }

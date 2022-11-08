@@ -34,6 +34,11 @@ namespace OOPLAB2
             snake.Pet();
             IReptile Isnake = new Snake(13,"Orange","Male",true,"Jackie",true);
             Isnake.LayEgg();
+
+            Console.WriteLine("-----------NEW ANIMAL-------------");
+
+            var empty = new Animals();
+            empty.PrintAnimal();
            
         }
     }
