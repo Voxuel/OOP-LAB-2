@@ -11,10 +11,6 @@ namespace OOPLAB2
         {
             this.IsSleeping = _isSleeping;
         }
-        public Husky() : base()
-        {
-
-        }
         public void CheckSleep()
         {
             if (!IsSleeping)

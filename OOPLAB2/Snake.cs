@@ -12,10 +12,7 @@ namespace OOPLAB2
         {
             this.IsPoisonous = _isPoisonous;
         }
-        public Snake() : base()
-        {
 
-        }
         void IReptile.LayEgg()
         {
             Console.WriteLine("The reptile lays an egg!");

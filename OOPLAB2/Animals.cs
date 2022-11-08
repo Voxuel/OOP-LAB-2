@@ -8,19 +8,19 @@ namespace OOPLAB2
     /// </summary>
     class Animals
     {
-        private readonly int Age = 0;
-        private readonly string Color;
-        private readonly string Gender;
-        private readonly bool IsHungry;
-        protected readonly string Name;       
-   
-        public Animals(int _age = 0,string _color = "null", string _gender = "null", bool _isHungry = false, string _name = "null" )
+        protected int Age = 0;
+        protected string Color = "NoDataProvided";
+        protected string Gender = "NoDataProvided";
+        protected bool IsHungry = false;
+        protected string Name = "NoDataProvided";
+
+        public Animals(int _age, string _color, string _gender, bool _isHungry, string _name)
         {
-            this.Age = _age;
-            this.Color = _color;
-            this.Gender = _gender;
-            this.IsHungry = _isHungry;
-            this.Name = _name;
+            Age = _age;
+            Color = _color;
+            Gender = _gender;
+            IsHungry = _isHungry;
+            Name = _name;
         }
         public void Pet()
         {

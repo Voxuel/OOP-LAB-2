@@ -9,7 +9,7 @@ namespace OOPLAB2
         {
             var cat = new Cat(10,"Grey","Female",false,"Nath",false);
             cat.PrintAnimal();
-            IMammal Icat = new Cat();
+            IMammal Icat = new Cat(1,"","",false,"",false);
             Icat.Move();
             cat.MakeSound();
 
@@ -37,7 +37,7 @@ namespace OOPLAB2
 
             Console.WriteLine("-----------NEW ANIMAL-------------");
 
-            var empty = new Animals();
+            var empty = new Animals(1, "", "", false, "");
             empty.PrintAnimal();
            
         }

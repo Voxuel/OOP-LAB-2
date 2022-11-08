@@ -13,10 +13,6 @@ namespace OOPLAB2
             this.ClawCutNeeded = _clawCutNeeded;
         }
 
-        public Cat() : base()
-        {
-
-        }
         void IMammal.Move()
         {
             Console.WriteLine("The mammal moves");
