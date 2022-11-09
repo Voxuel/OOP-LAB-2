@@ -4,17 +4,17 @@
 namespace OOPLAB2
 {
     /// <summary>
-    /// Class to handle animal-atributes that are later derived.
+    /// Class to handle animal-attributes that are later derived.
     /// </summary>
     class Animals
     {
-        protected int Age = 0;
-        protected string Color = "NoDataProvided";
-        protected string Gender = "NoDataProvided";
-        protected bool IsHungry = false;
+        private int Age = 0;
+        private string Color = "NoDataProvided";
+        private string Gender = "NoDataProvided";
+        private bool IsHungry = false;
         protected string Name = "NoDataProvided";
 
-        public Animals(int _age, string _color, string _gender, bool _isHungry, string _name)
+        protected Animals(int _age, string _color, string _gender, bool _isHungry, string _name)
         {
             Age = _age;
             Color = _color;
@@ -22,23 +22,20 @@ namespace OOPLAB2
             IsHungry = _isHungry;
             Name = _name;
         }
+        public Animals()
+        {
+
+        }
         public void Pet()
         {
             Console.WriteLine($"You pet {Name}");
         }
         public void Feed()
         {
-            if (!IsHungry)
-            {
-                Console.WriteLine($"{Name} is not hungry right now");
-            }
-            else
-            {
-                Console.WriteLine($"You feed {Name}");
-            }
+            Console.WriteLine(!IsHungry ? $"{Name} is not hungry right now" : $"You feed {Name}");
         }
         /// <summary>
-        /// Method to print the specified animal and all their atributes.
+        /// Method to print the specified animal and all their attributes.
         /// </summary>
         public void PrintAnimal()
         {

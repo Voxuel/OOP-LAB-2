@@ -37,9 +37,13 @@ namespace OOPLAB2
 
             Console.WriteLine("-----------NEW ANIMAL-------------");
 
-            var empty = new Animals(1, "", "", false, "");
+            var empty = new Animals();
             empty.PrintAnimal();
-           
+
+            var ani = new Animals();
+            ani.PrintAnimal();
+
+            Console.ReadKey();
         }
     }
 }
